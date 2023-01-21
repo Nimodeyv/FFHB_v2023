@@ -1,0 +1,1496 @@
+
+          <head>
+          <meta http-equiv="Content-Type" content="text/html; charset=latin-1">
+          <title>Planning des Matchs</title>
+          <style type="text/css" media="screen">
+            #customers {
+              font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+              font-size: 14px;
+              border-collapse: collapse;
+              width: 100%;
+            }
+            #customers td, #customers th {
+              border: 1px solid #ddd;
+              padding: 8px;
+            }
+            #customers tr:nth-child(even){background-color: #f2f2f2;}
+            #customers tr:hover {background-color: #ddd;}
+            #customers th {
+              padding-top: 12px;
+              padding-bottom: 12px;
+              text-align: left;
+              background-color: #003d77;
+              color: white;
+            }
+          </style>
+        </head>
+        <body>
+        <table border="1" class="dataframe" id="customers">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Journee</th>
+      <th>Periode</th>
+      <th>Date</th>
+      <th>equipe_dom</th>
+      <th>score_dom</th>
+      <th>score_ext</th>
+      <th>equipe_ext</th>
+      <th>lieu</th>
+      <th>arbitres</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>17/09 AU 18/09/2022</td>
+      <td>samedi 17 septembre 19H00</td>
+      <td>ENT RIED'HANDBALL U18M</td>
+      <td>36</td>
+      <td>30</td>
+      <td>STRASBOURG&amp;SCHILTIGHEIM U18M2</td>
+      <td>SALLE DU COLLEGE ROMAIN ROLLAND  RUE ERCKMANN CHATRIAN ERSTEIN</td>
+      <td>SCHUBNEL MICKAEL —</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>17/09 AU 18/09/2022</td>
+      <td>samedi 17 septembre 17H30</td>
+      <td>THIONVILLE U18M</td>
+      <td>28</td>
+      <td>26</td>
+      <td>BASSIN MUSSIPONTAIN U18M</td>
+      <td>GYMNASE JEAN-PIERRE ADAMS  RUE SAINT EXUPERY THIONVILLE</td>
+      <td>PORTE MAELYNE —</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>17/09 AU 18/09/2022</td>
+      <td>dimanche 18 septembre 14H00</td>
+      <td>ENT MULHOUSE ACADEMIE U18M2</td>
+      <td>29</td>
+      <td>30</td>
+      <td>HOCHFELDEN&amp;DETTWILLER U18M</td>
+      <td>ANDRE ERBLAND 50  BD PRESIDENT ROOSEVELT MULHOUSE</td>
+      <td>MERCHDI ANISSA —</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>17/09 AU 18/09/2022</td>
+      <td>dimanche 18 septembre 14H00</td>
+      <td>METZ U18M</td>
+      <td>24</td>
+      <td>25</td>
+      <td>LINGOLSHEIM</td>
+      <td>GYMNASE DU TECHNOPOLE 5  BOULEVARD ARAGO METZ</td>
+      <td>BENAMARA ABDESLAM —</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>17/09 AU 18/09/2022</td>
+      <td>dimanche 18 septembre 14H00</td>
+      <td>NANCY U18M2</td>
+      <td>33</td>
+      <td>24</td>
+      <td>SELESTAT U18M2</td>
+      <td>GYMNASE PROVENCAL 69 QUAI RENE 2 NANCY</td>
+      <td>JEANCOLAS QUENTIN AUDINET PAUL</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>17/09 AU 18/09/2022</td>
+      <td>samedi 17 septembre 16H00</td>
+      <td>COLMAR HC U18M</td>
+      <td>31</td>
+      <td>20</td>
+      <td>EPINAL U18M</td>
+      <td>MONTAGNE VERTE  PLACE DE LA MONTAGNE VERTE COLMAR</td>
+      <td>— HIRTH SEBASTIEN</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>24/09 AU 25/09/2022</td>
+      <td>samedi 24 septembre 18H00</td>
+      <td>STRASBOURG&amp;SCHILTIGHEIM U18M2</td>
+      <td>32</td>
+      <td>32</td>
+      <td>THIONVILLE U18M</td>
+      <td>GYMNASE DES MALTERIES 49  RUE DES MALTERIES SCHILTIGHEIM</td>
+      <td>DORN YOHAN —</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>24/09 AU 25/09/2022</td>
+      <td>samedi 24 septembre 16H30</td>
+      <td>HOCHFELDEN&amp;DETTWILLER U18M</td>
+      <td>29</td>
+      <td>28</td>
+      <td>ENT RIED'HANDBALL U18M</td>
+      <td>COMPLEXE SPORTIF DE HOCHFELDEN 1  RUE DES 4 VENTS HOCHFELDEN</td>
+      <td>VANAMANDEL ELLIOTT VANAMANDEL PIERRICK</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>24/09 AU 25/09/2022</td>
+      <td>samedi 24 septembre 16H00</td>
+      <td>BASSIN MUSSIPONTAIN U18M</td>
+      <td>25</td>
+      <td>18</td>
+      <td>EPINAL U18M</td>
+      <td>CHARLES ROTH  RUE JACQUES ANQUETIL DIEULOUARD</td>
+      <td>BENAMARA ABDESLAM —</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>24/09 AU 25/09/2022</td>
+      <td>dimanche 25 septembre 16H00</td>
+      <td>LINGOLSHEIM</td>
+      <td>20</td>
+      <td>31</td>
+      <td>ENT MULHOUSE ACADEMIE U18M2</td>
+      <td>GYMNASE COLETTE BESSON 30 MARIA CALAS LINGOLSHEIM</td>
+      <td>BRANELLEC ALEXANDRE MARCK FLAVIEN</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>24/09 AU 25/09/2022</td>
+      <td>samedi 24 septembre 18H00</td>
+      <td>COLMAR HC U18M</td>
+      <td>33</td>
+      <td>29</td>
+      <td>NANCY U18M2</td>
+      <td>MONTAGNE VERTE  PLACE DE LA MONTAGNE VERTE COLMAR</td>
+      <td>RUSSOTTI NOAH BALL HUGO</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>24/09 AU 25/09/2022</td>
+      <td>dimanche 25 septembre 16H00</td>
+      <td>SELESTAT U18M2</td>
+      <td>22</td>
+      <td>32</td>
+      <td>METZ U18M</td>
+      <td>COSEC EUGENE GRIESMAR  QUAI ALBRECHT SELESTAT</td>
+      <td>KUZU METIN MEYER LEO</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>01/10 AU 02/10/2022</td>
+      <td>samedi 1 octobre 16H00</td>
+      <td>EPINAL U18M</td>
+      <td>23</td>
+      <td>21</td>
+      <td>THIONVILLE U18M</td>
+      <td>PALAIS DES SPORTS  AVENUE DE SAINT DIE EPINAL</td>
+      <td>LOPES JOSE —</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>01/10 AU 02/10/2022</td>
+      <td>dimanche 2 octobre 14H00</td>
+      <td>ENT RIED'HANDBALL U18M</td>
+      <td>30</td>
+      <td>38</td>
+      <td>LINGOLSHEIM</td>
+      <td>HALL DES SPORTS  RUE D'ETTENHEIM BENFELD</td>
+      <td>— VOGLER NOE</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>01/10 AU 02/10/2022</td>
+      <td>samedi 1 octobre 18H00</td>
+      <td>NANCY U18M2</td>
+      <td>33</td>
+      <td>31</td>
+      <td>BASSIN MUSSIPONTAIN U18M</td>
+      <td>GYMNASE PROVENCAL 69 QUAI RENE 2 NANCY</td>
+      <td>BABLON MATHILDE —</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>01/10 AU 02/10/2022</td>
+      <td>samedi 1 octobre 14H00</td>
+      <td>ENT MULHOUSE ACADEMIE U18M2</td>
+      <td>15</td>
+      <td>20</td>
+      <td>SELESTAT U18M2</td>
+      <td>COMPLEXE SPORTIF  RUE DE LA FORET NOIRE RIXHEIM</td>
+      <td>BRANELLEC ALEXANDRE —</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>01/10 AU 02/10/2022</td>
+      <td>samedi 1 octobre 16H00</td>
+      <td>METZ U18M</td>
+      <td>31</td>
+      <td>24</td>
+      <td>COLMAR HC U18M</td>
+      <td>GYMNASE DU TECHNOPOLE 5  BOULEVARD ARAGO METZ</td>
+      <td>DELLISSE HUGO —</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>01/10 AU 02/10/2022</td>
+      <td>samedi 1 octobre 16H15</td>
+      <td>STRASBOURG&amp;SCHILTIGHEIM U18M2</td>
+      <td>47</td>
+      <td>30</td>
+      <td>HOCHFELDEN&amp;DETTWILLER U18M</td>
+      <td>GYMNASE DES MALTERIES 49  RUE DES MALTERIES SCHILTIGHEIM</td>
+      <td>BITZENHOFER BREUIL AUBIN —</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>08/10 AU 09/10/2022</td>
+      <td>samedi 8 octobre 16H00</td>
+      <td>EPINAL U18M</td>
+      <td>26</td>
+      <td>31</td>
+      <td>STRASBOURG&amp;SCHILTIGHEIM U18M2</td>
+      <td>PALAIS DES SPORTS  AVENUE DE SAINT DIE EPINAL</td>
+      <td>LIROT MAXIME —</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>08/10 AU 09/10/2022</td>
+      <td>dimanche 9 octobre 14H00</td>
+      <td>LINGOLSHEIM</td>
+      <td>44</td>
+      <td>22</td>
+      <td>HOCHFELDEN&amp;DETTWILLER U18M</td>
+      <td>GYMNASE COLETTE BESSON 30 MARIA CALAS LINGOLSHEIM</td>
+      <td>BALL HUGO RUSSOTTI NOAH</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>08/10 AU 09/10/2022</td>
+      <td>dimanche 9 octobre 14H00</td>
+      <td>THIONVILLE U18M</td>
+      <td>34</td>
+      <td>38</td>
+      <td>NANCY U18M2</td>
+      <td>GYMNASE JEAN-PIERRE ADAMS  RUE SAINT EXUPERY THIONVILLE</td>
+      <td>CAQUANT ADRIEN MENGUAL YANIS</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>08/10 AU 09/10/2022</td>
+      <td>samedi 8 octobre 16H00</td>
+      <td>SELESTAT U18M2</td>
+      <td>25</td>
+      <td>31</td>
+      <td>ENT RIED'HANDBALL U18M</td>
+      <td>CENTRE SPORTIF INTERCOMMUNAL EUGENE GRIESMAR  QUAI ALBRECHT SELESTAT</td>
+      <td>MERCHDI ANISSA —</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>08/10 AU 09/10/2022</td>
+      <td>samedi 8 octobre 16H00</td>
+      <td>BASSIN MUSSIPONTAIN U18M</td>
+      <td>26</td>
+      <td>27</td>
+      <td>METZ U18M</td>
+      <td>CHARLES ROTH  RUE JACQUES ANQUETIL DIEULOUARD</td>
+      <td>LOPES JOSE —</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>08/10 AU 09/10/2022</td>
+      <td>dimanche 9 octobre 14H00</td>
+      <td>COLMAR HC U18M</td>
+      <td>27</td>
+      <td>23</td>
+      <td>ENT MULHOUSE ACADEMIE U18M2</td>
+      <td>MONTAGNE VERTE  PLACE DE LA MONTAGNE VERTE COLMAR</td>
+      <td>SCHNEIDER VALENTIN —</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>15/10 AU 16/10/2022</td>
+      <td>samedi 15 octobre 18H00</td>
+      <td>STRASBOURG&amp;SCHILTIGHEIM U18M2</td>
+      <td>31</td>
+      <td>39</td>
+      <td>LINGOLSHEIM</td>
+      <td>GYMNASE DES MALTERIES 49  RUE DES MALTERIES SCHILTIGHEIM</td>
+      <td>OUDIN EMMA —</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>15/10 AU 16/10/2022</td>
+      <td>samedi 15 octobre 18H30</td>
+      <td>HOCHFELDEN&amp;DETTWILLER U18M</td>
+      <td>26</td>
+      <td>27</td>
+      <td>SELESTAT U18M2</td>
+      <td>COMPLEXE SPORTIF DE HOCHFELDEN 1  RUE DES 4 VENTS HOCHFELDEN</td>
+      <td>LIBIC ARIJAN LIBIC DORIJAN</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>15/10 AU 16/10/2022</td>
+      <td>samedi 15 octobre 14H00</td>
+      <td>METZ U18M</td>
+      <td>35</td>
+      <td>24</td>
+      <td>THIONVILLE U18M</td>
+      <td>GYMNASE DU TECHNOPOLE 5  BOULEVARD ARAGO METZ</td>
+      <td>GOURGOUILLON ERIC —</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>15/10 AU 16/10/2022</td>
+      <td>samedi 15 octobre 15H15</td>
+      <td>ENT RIED'HANDBALL U18M</td>
+      <td>28</td>
+      <td>37</td>
+      <td>COLMAR HC U18M</td>
+      <td>SALLE DU COLLEGE ROMAIN ROLLAND  RUE ERCKMANN CHATRIAN ERSTEIN</td>
+      <td>BALL HUGO RUSSOTTI NOAH</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>15/10 AU 16/10/2022</td>
+      <td>dimanche 16 octobre 16H00</td>
+      <td>ENT MULHOUSE ACADEMIE U18M2</td>
+      <td>29</td>
+      <td>28</td>
+      <td>BASSIN MUSSIPONTAIN U18M</td>
+      <td>COMPLEXE SPORTIF  RUE DE LA FORET NOIRE RIXHEIM</td>
+      <td>KUZU METIN MEYER LEO</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>15/10 AU 16/10/2022</td>
+      <td>samedi 15 octobre 18H30</td>
+      <td>NANCY U18M2</td>
+      <td>20</td>
+      <td>23</td>
+      <td>EPINAL U18M</td>
+      <td>GYMNASE PROVENCAL 69 QUAI RENE 2 NANCY</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>22/10 AU 23/10/2022</td>
+      <td>samedi 22 octobre 18H00</td>
+      <td>NANCY U18M2</td>
+      <td>29</td>
+      <td>36</td>
+      <td>STRASBOURG&amp;SCHILTIGHEIM U18M2</td>
+      <td>GYMNASE PROVENCAL 69 QUAI RENE 2 NANCY</td>
+      <td>SIGU LEA —</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>22/10 AU 23/10/2022</td>
+      <td>samedi 22 octobre 19H00</td>
+      <td>SELESTAT U18M2</td>
+      <td>36</td>
+      <td>33</td>
+      <td>LINGOLSHEIM</td>
+      <td>COSEC EUGENE GRIESMAR  QUAI ALBRECHT SELESTAT</td>
+      <td>BRANELLEC ALEXANDRE —</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>22/10 AU 23/10/2022</td>
+      <td>samedi 22 octobre 18H00</td>
+      <td>EPINAL U18M</td>
+      <td>19</td>
+      <td>25</td>
+      <td>METZ U18M</td>
+      <td>PALAIS DES SPORTS  AVENUE DE SAINT DIE EPINAL</td>
+      <td>SCHUBNEL MICKAEL —</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>22/10 AU 23/10/2022</td>
+      <td>samedi 22 octobre 18H00</td>
+      <td>COLMAR HC U18M</td>
+      <td>26</td>
+      <td>31</td>
+      <td>HOCHFELDEN&amp;DETTWILLER U18M</td>
+      <td>MONTAGNE VERTE  PLACE DE LA MONTAGNE VERTE COLMAR</td>
+      <td>MERCHDI ANISSA —</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>22/10 AU 23/10/2022</td>
+      <td>samedi 22 octobre 18H00</td>
+      <td>THIONVILLE U18M</td>
+      <td>26</td>
+      <td>32</td>
+      <td>ENT MULHOUSE ACADEMIE U18M2</td>
+      <td>GYMNASE JEAN-PIERRE ADAMS  RUE SAINT EXUPERY THIONVILLE</td>
+      <td>ZULIANI JEAN-PIERRE —</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>22/10 AU 23/10/2022</td>
+      <td>samedi 22 octobre 15H45</td>
+      <td>BASSIN MUSSIPONTAIN U18M</td>
+      <td>27</td>
+      <td>23</td>
+      <td>ENT RIED'HANDBALL U18M</td>
+      <td>CHARLES ROTH  RUE JACQUES ANQUETIL DIEULOUARD</td>
+      <td>VAIREL PAUL —</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>19/11 AU 20/11/2022</td>
+      <td>samedi 19 novembre 18H00</td>
+      <td>STRASBOURG&amp;SCHILTIGHEIM U18M2</td>
+      <td>39</td>
+      <td>31</td>
+      <td>SELESTAT U18M2</td>
+      <td>GYMNASE DES MALTERIES 49  RUE DES MALTERIES SCHILTIGHEIM</td>
+      <td>VANAMANDEL ELLIOTT VANAMANDEL PIERRICK</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>19/11 AU 20/11/2022</td>
+      <td>samedi 19 novembre 19H00</td>
+      <td>METZ U18M</td>
+      <td>26</td>
+      <td>28</td>
+      <td>NANCY U18M2</td>
+      <td>GYMNASE DU TECHNOPOLE 5  BOULEVARD ARAGO METZ</td>
+      <td>LEFEVRE JEAN-LUC —</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>19/11 AU 20/11/2022</td>
+      <td>dimanche 20 novembre 16H00</td>
+      <td>LINGOLSHEIM</td>
+      <td>24</td>
+      <td>25</td>
+      <td>COLMAR HC U18M</td>
+      <td>GYMNASE COLETTE BESSON 30 MARIA CALAS LINGOLSHEIM</td>
+      <td>ALTERMATT LOUANE VOGLER NOE</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>19/11 AU 20/11/2022</td>
+      <td>samedi 19 novembre 18H30</td>
+      <td>ENT MULHOUSE ACADEMIE U18M2</td>
+      <td>32</td>
+      <td>23</td>
+      <td>EPINAL U18M</td>
+      <td>ANDRE ERBLAND 50  BD PRESIDENT ROOSEVELT MULHOUSE</td>
+      <td>LIROT MAXIME NOEL ARTHUR</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>19/11 AU 20/11/2022</td>
+      <td>samedi 19 novembre 18H00</td>
+      <td>HOCHFELDEN&amp;DETTWILLER U18M</td>
+      <td>26</td>
+      <td>19</td>
+      <td>BASSIN MUSSIPONTAIN U18M</td>
+      <td>COMPLEXE SPORTIF DE HOCHFELDEN 1  RUE DES 4 VENTS HOCHFELDEN</td>
+      <td>FRIESS LUC METZ VALENTIN</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>19/11 AU 20/11/2022</td>
+      <td>dimanche 20 novembre 15H45</td>
+      <td>ENT RIED'HANDBALL U18M</td>
+      <td>34</td>
+      <td>33</td>
+      <td>THIONVILLE U18M</td>
+      <td>HALL DES SPORTS  RUE D'ETTENHEIM BENFELD</td>
+      <td>CAMBUS GAETAN CAMBUS EL-KAMSA</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>26/11 AU 27/11/2022</td>
+      <td>dimanche 27 novembre 16H00</td>
+      <td>METZ U18M</td>
+      <td>28</td>
+      <td>28</td>
+      <td>STRASBOURG&amp;SCHILTIGHEIM U18M2</td>
+      <td>GYMNASE DU TECHNOPOLE 5  BOULEVARD ARAGO METZ</td>
+      <td>VANLANDE PATRICK —</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>26/11 AU 27/11/2022</td>
+      <td>dimanche 27 novembre 14H00</td>
+      <td>COLMAR HC U18M</td>
+      <td>31</td>
+      <td>28</td>
+      <td>SELESTAT U18M2</td>
+      <td>MONTAGNE VERTE  PLACE DE LA MONTAGNE VERTE COLMAR</td>
+      <td>BITZENHOFER BREUIL AUBIN —</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>26/11 AU 27/11/2022</td>
+      <td>samedi 26 novembre 18H00</td>
+      <td>NANCY U18M2</td>
+      <td>16</td>
+      <td>35</td>
+      <td>ENT MULHOUSE ACADEMIE U18M2</td>
+      <td>GYMNASE PROVENCAL 69 QUAI RENE 2 NANCY</td>
+      <td>SIGU LEA —</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>26/11 AU 27/11/2022</td>
+      <td>samedi 26 novembre 16H15</td>
+      <td>BASSIN MUSSIPONTAIN U18M</td>
+      <td>27</td>
+      <td>35</td>
+      <td>LINGOLSHEIM</td>
+      <td>CHARLES ROTH  RUE JACQUES ANQUETIL DIEULOUARD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>26/11 AU 27/11/2022</td>
+      <td>dimanche 27 novembre 14H30</td>
+      <td>THIONVILLE U18M</td>
+      <td>39</td>
+      <td>16</td>
+      <td>HOCHFELDEN&amp;DETTWILLER U18M</td>
+      <td>GYMNASE JEAN-PIERRE ADAMS  RUE SAINT EXUPERY THIONVILLE</td>
+      <td>BABLON MATHILDE DEVOITINE CELENA</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>26/11 AU 27/11/2022</td>
+      <td>samedi 26 novembre 14H00</td>
+      <td>EPINAL U18M</td>
+      <td>28</td>
+      <td>22</td>
+      <td>ENT RIED'HANDBALL U18M</td>
+      <td>PALAIS DES SPORTS  AVENUE DE SAINT DIE EPINAL</td>
+      <td>VILLEMIN ERIC —</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>14/01 AU 15/01/2023</td>
+      <td>samedi 14 janvier 16H30</td>
+      <td>BASSIN MUSSIPONTAIN U18M</td>
+      <td>25</td>
+      <td>25</td>
+      <td>COLMAR HC U18M</td>
+      <td>CHARLES ROTH  RUE JACQUES ANQUETIL DIEULOUARD</td>
+      <td>ROUSSEAU MARTIN —</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>14/01 AU 15/01/2023</td>
+      <td>dimanche 15 janvier 16H00</td>
+      <td>METZ U18M</td>
+      <td></td>
+      <td></td>
+      <td>ENT RIED'HANDBALL U18M</td>
+      <td>GYMNASE DU TECHNOPOLE 5  BOULEVARD ARAGO METZ</td>
+      <td>TRAUT AMAURY TRAUT NATHY</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>14/01 AU 15/01/2023</td>
+      <td>samedi 14 janvier 17H45</td>
+      <td>THIONVILLE U18M</td>
+      <td>23</td>
+      <td>34</td>
+      <td>SELESTAT U18M2</td>
+      <td>GYMNASE JEAN-PIERRE ADAMS  RUE SAINT EXUPERY THIONVILLE</td>
+      <td>CAQUANT ADRIEN MENGUAL YANIS</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>14/01 AU 15/01/2023</td>
+      <td>samedi 14 janvier 18H30</td>
+      <td>NANCY U18M2</td>
+      <td>26</td>
+      <td>24</td>
+      <td>HOCHFELDEN&amp;DETTWILLER U18M</td>
+      <td>GYMNASE PROVENCAL 69 QUAI RENE 2 NANCY</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>14/01 AU 15/01/2023</td>
+      <td>samedi 14 janvier 16H00</td>
+      <td>EPINAL U18M</td>
+      <td>28</td>
+      <td>25</td>
+      <td>LINGOLSHEIM</td>
+      <td>PALAIS DES SPORTS  AVENUE DE SAINT DIE EPINAL</td>
+      <td>KUZU METIN —</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>14/01 AU 15/01/2023</td>
+      <td>samedi 14 janvier 15H30</td>
+      <td>ENT MULHOUSE ACADEMIE U18M2</td>
+      <td>33</td>
+      <td>25</td>
+      <td>STRASBOURG&amp;SCHILTIGHEIM U18M2</td>
+      <td>COMPLEXE SPORTIF  RUE DE LA FORET NOIRE RIXHEIM</td>
+      <td>— DREYER AYMERIC</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>21/01 AU 22/01/2023</td>
+      <td>samedi 21 janvier 16H00</td>
+      <td>STRASBOURG&amp;SCHILTIGHEIM U18M2</td>
+      <td></td>
+      <td></td>
+      <td>BASSIN MUSSIPONTAIN U18M</td>
+      <td>GYMNASE DE L'EUROPE  ALLES D'ATHENES SCHILTIGHEIM</td>
+      <td>BRANELLEC ALEXANDRE —</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>21/01 AU 22/01/2023</td>
+      <td>samedi 21 janvier 18H45</td>
+      <td>ENT RIED'HANDBALL U18M</td>
+      <td></td>
+      <td></td>
+      <td>ENT MULHOUSE ACADEMIE U18M2</td>
+      <td>SALLE DU COLLEGE ROMAIN ROLLAND  RUE ERCKMANN CHATRIAN ERSTEIN</td>
+      <td>CESARO LUCAS MAURIN ARNAUD</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>21/01 AU 22/01/2023</td>
+      <td>samedi 21 janvier 17H30</td>
+      <td>COLMAR HC U18M</td>
+      <td></td>
+      <td></td>
+      <td>THIONVILLE U18M</td>
+      <td>MONTAGNE VERTE  PLACE DE LA MONTAGNE VERTE COLMAR</td>
+      <td>BIERMANN LUKAS DREYER AYMERIC</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>21/01 AU 22/01/2023</td>
+      <td>samedi 21 janvier 18H30</td>
+      <td>HOCHFELDEN&amp;DETTWILLER U18M</td>
+      <td></td>
+      <td></td>
+      <td>METZ U18M</td>
+      <td>COMPLEXE SPORTIF DE HOCHFELDEN 1  RUE DES 4 VENTS HOCHFELDEN</td>
+      <td>SCHNEPP ELIOT —</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>21/01 AU 22/01/2023</td>
+      <td>samedi 21 janvier 15H45</td>
+      <td>SELESTAT U18M2</td>
+      <td></td>
+      <td></td>
+      <td>EPINAL U18M</td>
+      <td>CENTRE SPORTIF INTERCOMMUNAL EUGENE GRIESMAR  QUAI ALBRECHT SELESTAT</td>
+      <td>DOPPLER LUCAS —</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>21/01 AU 22/01/2023</td>
+      <td>samedi 21 janvier 18H00</td>
+      <td>LINGOLSHEIM</td>
+      <td></td>
+      <td></td>
+      <td>NANCY U18M2</td>
+      <td>GYMNASE COLETTE BESSON 30 MARIA CALAS LINGOLSHEIM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>28/01 AU 29/01/2023</td>
+      <td>samedi 28 janvier 14H15</td>
+      <td>STRASBOURG&amp;SCHILTIGHEIM U18M2</td>
+      <td></td>
+      <td></td>
+      <td>ENT RIED'HANDBALL U18M</td>
+      <td>GYMNASE DE L'EUROPE  ALLES D'ATHENES SCHILTIGHEIM</td>
+      <td>BERNARDI ADRIEN MEZHOUR DRISS</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>28/01 AU 29/01/2023</td>
+      <td>samedi 28 janvier 18H00</td>
+      <td>BASSIN MUSSIPONTAIN U18M</td>
+      <td></td>
+      <td></td>
+      <td>THIONVILLE U18M</td>
+      <td>CHARLES ROTH  RUE JACQUES ANQUETIL DIEULOUARD</td>
+      <td>MICCICHE LAURA DEMAIE BENJAMIN</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>28/01 AU 29/01/2023</td>
+      <td>samedi 28 janvier 16H30</td>
+      <td>HOCHFELDEN&amp;DETTWILLER U18M</td>
+      <td></td>
+      <td></td>
+      <td>ENT MULHOUSE ACADEMIE U18M2</td>
+      <td>COMPLEXE SPORTIF DE HOCHFELDEN 1  RUE DES 4 VENTS HOCHFELDEN</td>
+      <td>LIBIC ARIJAN LIBIC DORIJAN</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>28/01 AU 29/01/2023</td>
+      <td>samedi 28 janvier 16H30</td>
+      <td>LINGOLSHEIM</td>
+      <td></td>
+      <td></td>
+      <td>METZ U18M</td>
+      <td>GYMNASE COLETTE BESSON 30 MARIA CALAS LINGOLSHEIM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>28/01 AU 29/01/2023</td>
+      <td>samedi 28 janvier 19H00</td>
+      <td>SELESTAT U18M2</td>
+      <td></td>
+      <td></td>
+      <td>NANCY U18M2</td>
+      <td>CENTRE SPORTIF INTERCOMMUNAL EUGENE GRIESMAR  QUAI ALBRECHT SELESTAT</td>
+      <td>VANAMANDEL ELLIOTT VANAMANDEL PIERRICK</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>28/01 AU 29/01/2023</td>
+      <td>samedi 28 janvier 18H00</td>
+      <td>EPINAL U18M</td>
+      <td></td>
+      <td></td>
+      <td>COLMAR HC U18M</td>
+      <td>PALAIS DES SPORTS  AVENUE DE SAINT DIE EPINAL</td>
+      <td>CAQUANT ADRIEN —</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>04/02 AU 05/02/2023</td>
+      <td>dimanche 5 février 14H00</td>
+      <td>THIONVILLE U18M</td>
+      <td></td>
+      <td></td>
+      <td>STRASBOURG&amp;SCHILTIGHEIM U18M2</td>
+      <td>GYMNASE JEAN-PIERRE ADAMS  RUE SAINT EXUPERY THIONVILLE</td>
+      <td>AUDART RENAUD —</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>04/02 AU 05/02/2023</td>
+      <td>samedi 4 février 18H00</td>
+      <td>ENT RIED'HANDBALL U18M</td>
+      <td></td>
+      <td></td>
+      <td>HOCHFELDEN&amp;DETTWILLER U18M</td>
+      <td>HALL DES SPORTS  RUE D'ETTENHEIM BENFELD</td>
+      <td>LIBIC ARIJAN LIBIC DORIJAN</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>04/02 AU 05/02/2023</td>
+      <td>samedi 4 février 16H00</td>
+      <td>EPINAL U18M</td>
+      <td></td>
+      <td></td>
+      <td>BASSIN MUSSIPONTAIN U18M</td>
+      <td>PALAIS DES SPORTS  AVENUE DE SAINT DIE EPINAL</td>
+      <td>DEMAIE BENJAMIN MICCICHE LAURA</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>04/02 AU 05/02/2023</td>
+      <td>samedi 4 février 17H00</td>
+      <td>ENT MULHOUSE ACADEMIE U18M2</td>
+      <td></td>
+      <td></td>
+      <td>LINGOLSHEIM</td>
+      <td>COMPLEXE SPORTIF  RUE DE LA FORET NOIRE RIXHEIM</td>
+      <td>RUSSOTTI NOAH BALL HUGO</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>04/02 AU 05/02/2023</td>
+      <td>samedi 4 février 17H00</td>
+      <td>NANCY U18M2</td>
+      <td></td>
+      <td></td>
+      <td>COLMAR HC U18M</td>
+      <td>GYMNASE PROVENCAL 69 QUAI RENE 2 NANCY</td>
+      <td>LOUBLI STEVE —</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>04/02 AU 05/02/2023</td>
+      <td>dimanche 5 février 16H00</td>
+      <td>METZ U18M</td>
+      <td></td>
+      <td></td>
+      <td>SELESTAT U18M2</td>
+      <td>GYMNASE DU TECHNOPOLE 5  BOULEVARD ARAGO METZ</td>
+      <td>SIGU LEA —</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>11/02 AU 12/02/2023</td>
+      <td>samedi 11 février 16H30</td>
+      <td>HOCHFELDEN&amp;DETTWILLER U18M</td>
+      <td></td>
+      <td></td>
+      <td>STRASBOURG&amp;SCHILTIGHEIM U18M2</td>
+      <td>COMPLEXE SPORTIF DE HOCHFELDEN 1  RUE DES 4 VENTS HOCHFELDEN</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>11/02 AU 12/02/2023</td>
+      <td>samedi 11 février 18H00</td>
+      <td>THIONVILLE U18M</td>
+      <td></td>
+      <td></td>
+      <td>EPINAL U18M</td>
+      <td>GYMNASE JEAN-PIERRE ADAMS  RUE SAINT EXUPERY THIONVILLE</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>11/02 AU 12/02/2023</td>
+      <td>samedi 11 février 14H00</td>
+      <td>LINGOLSHEIM</td>
+      <td></td>
+      <td></td>
+      <td>ENT RIED'HANDBALL U18M</td>
+      <td>GYMNASE COLETTE BESSON 30 MARIA CALAS LINGOLSHEIM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>11/02 AU 12/02/2023</td>
+      <td>samedi 11 février 15H45</td>
+      <td>BASSIN MUSSIPONTAIN U18M</td>
+      <td></td>
+      <td></td>
+      <td>NANCY U18M2</td>
+      <td>CHARLES ROTH  RUE JACQUES ANQUETIL DIEULOUARD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>11/02 AU 12/02/2023</td>
+      <td>samedi 11 février 17H00</td>
+      <td>SELESTAT U18M2</td>
+      <td></td>
+      <td></td>
+      <td>ENT MULHOUSE ACADEMIE U18M2</td>
+      <td>CENTRE SPORTIF INTERCOMMUNAL EUGENE GRIESMAR  QUAI ALBRECHT SELESTAT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>11/02 AU 12/02/2023</td>
+      <td>samedi 11 février 17H30</td>
+      <td>COLMAR HC U18M</td>
+      <td></td>
+      <td></td>
+      <td>METZ U18M</td>
+      <td>MONTAGNE VERTE  PLACE DE LA MONTAGNE VERTE COLMAR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>04/03 AU 05/03/2023</td>
+      <td>samedi 4 mars 18H45</td>
+      <td>STRASBOURG&amp;SCHILTIGHEIM U18M2</td>
+      <td></td>
+      <td></td>
+      <td>EPINAL U18M</td>
+      <td>GYMNASE DE L'EUROPE  ALLES D'ATHENES SCHILTIGHEIM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>04/03 AU 05/03/2023</td>
+      <td>samedi 4 mars 16H30</td>
+      <td>HOCHFELDEN&amp;DETTWILLER U18M</td>
+      <td></td>
+      <td></td>
+      <td>LINGOLSHEIM</td>
+      <td>COMPLEXE SPORTIF DE HOCHFELDEN 1  RUE DES 4 VENTS HOCHFELDEN</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>04/03 AU 05/03/2023</td>
+      <td>samedi 4 mars 18H45</td>
+      <td>NANCY U18M2</td>
+      <td></td>
+      <td></td>
+      <td>THIONVILLE U18M</td>
+      <td>GYMNASE PROVENCAL 69 QUAI RENE 2 NANCY</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>04/03 AU 05/03/2023</td>
+      <td></td>
+      <td>ENT RIED'HANDBALL U18M</td>
+      <td></td>
+      <td></td>
+      <td>SELESTAT U18M2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>04/03 AU 05/03/2023</td>
+      <td>dimanche 5 mars 16H00</td>
+      <td>METZ U18M</td>
+      <td></td>
+      <td></td>
+      <td>BASSIN MUSSIPONTAIN U18M</td>
+      <td>GYMNASE DU TECHNOPOLE 5  BOULEVARD ARAGO METZ</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>04/03 AU 05/03/2023</td>
+      <td>dimanche 5 mars 16H00</td>
+      <td>ENT MULHOUSE ACADEMIE U18M2</td>
+      <td></td>
+      <td></td>
+      <td>COLMAR HC U18M</td>
+      <td>COMPLEXE SPORTIF  RUE DE LA FORET NOIRE RIXHEIM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>11/03 AU 12/03/2023</td>
+      <td>dimanche 12 mars 14H00</td>
+      <td>LINGOLSHEIM</td>
+      <td></td>
+      <td></td>
+      <td>STRASBOURG&amp;SCHILTIGHEIM U18M2</td>
+      <td>GYMNASE COLETTE BESSON 30 MARIA CALAS LINGOLSHEIM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>11/03 AU 12/03/2023</td>
+      <td>samedi 11 mars 16H00</td>
+      <td>EPINAL U18M</td>
+      <td></td>
+      <td></td>
+      <td>NANCY U18M2</td>
+      <td>PALAIS DES SPORTS  AVENUE DE SAINT DIE EPINAL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>11/03 AU 12/03/2023</td>
+      <td></td>
+      <td>SELESTAT U18M2</td>
+      <td></td>
+      <td></td>
+      <td>HOCHFELDEN&amp;DETTWILLER U18M</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>11/03 AU 12/03/2023</td>
+      <td></td>
+      <td>THIONVILLE U18M</td>
+      <td></td>
+      <td></td>
+      <td>METZ U18M</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>11/03 AU 12/03/2023</td>
+      <td>dimanche 12 mars 14H00</td>
+      <td>COLMAR HC U18M</td>
+      <td></td>
+      <td></td>
+      <td>ENT RIED'HANDBALL U18M</td>
+      <td>MONTAGNE VERTE  PLACE DE LA MONTAGNE VERTE COLMAR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>11/03 AU 12/03/2023</td>
+      <td></td>
+      <td>BASSIN MUSSIPONTAIN U18M</td>
+      <td></td>
+      <td></td>
+      <td>ENT MULHOUSE ACADEMIE U18M2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>18/03 AU 19/03/2023</td>
+      <td>samedi 18 mars 16H00</td>
+      <td>STRASBOURG&amp;SCHILTIGHEIM U18M2</td>
+      <td></td>
+      <td></td>
+      <td>NANCY U18M2</td>
+      <td>GYMNASE DE L'EUROPE  ALLES D'ATHENES SCHILTIGHEIM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>18/03 AU 19/03/2023</td>
+      <td></td>
+      <td>LINGOLSHEIM</td>
+      <td></td>
+      <td></td>
+      <td>SELESTAT U18M2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>18/03 AU 19/03/2023</td>
+      <td></td>
+      <td>METZ U18M</td>
+      <td></td>
+      <td></td>
+      <td>EPINAL U18M</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>18/03 AU 19/03/2023</td>
+      <td>samedi 18 mars 18H30</td>
+      <td>HOCHFELDEN&amp;DETTWILLER U18M</td>
+      <td></td>
+      <td></td>
+      <td>COLMAR HC U18M</td>
+      <td>COMPLEXE SPORTIF DE HOCHFELDEN 1  RUE DES 4 VENTS HOCHFELDEN</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>18/03 AU 19/03/2023</td>
+      <td>samedi 18 mars 17H30</td>
+      <td>ENT MULHOUSE ACADEMIE U18M2</td>
+      <td></td>
+      <td></td>
+      <td>THIONVILLE U18M</td>
+      <td>COMPLEXE SPORTIF  RUE DE LA FORET NOIRE RIXHEIM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>18/03 AU 19/03/2023</td>
+      <td></td>
+      <td>ENT RIED'HANDBALL U18M</td>
+      <td></td>
+      <td></td>
+      <td>BASSIN MUSSIPONTAIN U18M</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>01/04 AU 02/04/2023</td>
+      <td></td>
+      <td>SELESTAT U18M2</td>
+      <td></td>
+      <td></td>
+      <td>STRASBOURG&amp;SCHILTIGHEIM U18M2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>01/04 AU 02/04/2023</td>
+      <td></td>
+      <td>NANCY U18M2</td>
+      <td></td>
+      <td></td>
+      <td>METZ U18M</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>01/04 AU 02/04/2023</td>
+      <td>samedi 1 avril 16H30</td>
+      <td>COLMAR HC U18M</td>
+      <td></td>
+      <td></td>
+      <td>LINGOLSHEIM</td>
+      <td>MONTAGNE VERTE  PLACE DE LA MONTAGNE VERTE COLMAR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>01/04 AU 02/04/2023</td>
+      <td>samedi 1 avril 16H00</td>
+      <td>EPINAL U18M</td>
+      <td></td>
+      <td></td>
+      <td>ENT MULHOUSE ACADEMIE U18M2</td>
+      <td>PALAIS DES SPORTS  AVENUE DE SAINT DIE EPINAL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>01/04 AU 02/04/2023</td>
+      <td></td>
+      <td>BASSIN MUSSIPONTAIN U18M</td>
+      <td></td>
+      <td></td>
+      <td>HOCHFELDEN&amp;DETTWILLER U18M</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>01/04 AU 02/04/2023</td>
+      <td></td>
+      <td>THIONVILLE U18M</td>
+      <td></td>
+      <td></td>
+      <td>ENT RIED'HANDBALL U18M</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>15/04 AU 16/04/2023</td>
+      <td>samedi 15 avril 18H00</td>
+      <td>STRASBOURG&amp;SCHILTIGHEIM U18M2</td>
+      <td></td>
+      <td></td>
+      <td>METZ U18M</td>
+      <td>GYMNASE DE L'EUROPE  ALLES D'ATHENES SCHILTIGHEIM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>15/04 AU 16/04/2023</td>
+      <td></td>
+      <td>SELESTAT U18M2</td>
+      <td></td>
+      <td></td>
+      <td>COLMAR HC U18M</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>15/04 AU 16/04/2023</td>
+      <td>dimanche 16 avril 14H00</td>
+      <td>ENT MULHOUSE ACADEMIE U18M2</td>
+      <td></td>
+      <td></td>
+      <td>NANCY U18M2</td>
+      <td>GYMNASE DE LA DOLLER  DE TOULON MULHOUSE</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>15/04 AU 16/04/2023</td>
+      <td></td>
+      <td>LINGOLSHEIM</td>
+      <td></td>
+      <td></td>
+      <td>BASSIN MUSSIPONTAIN U18M</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>15/04 AU 16/04/2023</td>
+      <td></td>
+      <td>ENT RIED'HANDBALL U18M</td>
+      <td></td>
+      <td></td>
+      <td>EPINAL U18M</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>15/04 AU 16/04/2023</td>
+      <td>samedi 15 avril 16H00</td>
+      <td>HOCHFELDEN&amp;DETTWILLER U18M</td>
+      <td></td>
+      <td></td>
+      <td>THIONVILLE U18M</td>
+      <td>COMPLEXE SPORTIF DE HOCHFELDEN 1  RUE DES 4 VENTS HOCHFELDEN</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>06/05 AU 07/05/2023</td>
+      <td>dimanche 7 mai 14H00</td>
+      <td>COLMAR HC U18M</td>
+      <td></td>
+      <td></td>
+      <td>STRASBOURG&amp;SCHILTIGHEIM U18M2</td>
+      <td>MONTAGNE VERTE  PLACE DE LA MONTAGNE VERTE COLMAR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>06/05 AU 07/05/2023</td>
+      <td></td>
+      <td>METZ U18M</td>
+      <td></td>
+      <td></td>
+      <td>ENT MULHOUSE ACADEMIE U18M2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>06/05 AU 07/05/2023</td>
+      <td></td>
+      <td>BASSIN MUSSIPONTAIN U18M</td>
+      <td></td>
+      <td></td>
+      <td>SELESTAT U18M2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>06/05 AU 07/05/2023</td>
+      <td></td>
+      <td>NANCY U18M2</td>
+      <td></td>
+      <td></td>
+      <td>ENT RIED'HANDBALL U18M</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>06/05 AU 07/05/2023</td>
+      <td></td>
+      <td>THIONVILLE U18M</td>
+      <td></td>
+      <td></td>
+      <td>LINGOLSHEIM</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>06/05 AU 07/05/2023</td>
+      <td></td>
+      <td>EPINAL U18M</td>
+      <td></td>
+      <td></td>
+      <td>HOCHFELDEN&amp;DETTWILLER U18M</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>13/05 AU 14/05/2023</td>
+      <td>samedi 13 mai 18H00</td>
+      <td>STRASBOURG&amp;SCHILTIGHEIM U18M2</td>
+      <td></td>
+      <td></td>
+      <td>ENT MULHOUSE ACADEMIE U18M2</td>
+      <td>GYMNASE DES MALTERIES 49  RUE DES MALTERIES SCHILTIGHEIM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>13/05 AU 14/05/2023</td>
+      <td>samedi 13 mai 18H00</td>
+      <td>COLMAR HC U18M</td>
+      <td></td>
+      <td></td>
+      <td>BASSIN MUSSIPONTAIN U18M</td>
+      <td>MONTAGNE VERTE  PLACE DE LA MONTAGNE VERTE COLMAR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>13/05 AU 14/05/2023</td>
+      <td></td>
+      <td>ENT RIED'HANDBALL U18M</td>
+      <td></td>
+      <td></td>
+      <td>METZ U18M</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>13/05 AU 14/05/2023</td>
+      <td></td>
+      <td>SELESTAT U18M2</td>
+      <td></td>
+      <td></td>
+      <td>THIONVILLE U18M</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>13/05 AU 14/05/2023</td>
+      <td></td>
+      <td>HOCHFELDEN&amp;DETTWILLER U18M</td>
+      <td></td>
+      <td></td>
+      <td>NANCY U18M2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>13/05 AU 14/05/2023</td>
+      <td></td>
+      <td>LINGOLSHEIM</td>
+      <td></td>
+      <td></td>
+      <td>EPINAL U18M</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>27/05 AU 28/05/2023</td>
+      <td></td>
+      <td>BASSIN MUSSIPONTAIN U18M</td>
+      <td></td>
+      <td></td>
+      <td>STRASBOURG&amp;SCHILTIGHEIM U18M2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>27/05 AU 28/05/2023</td>
+      <td>samedi 27 mai 17H30</td>
+      <td>ENT MULHOUSE ACADEMIE U18M2</td>
+      <td></td>
+      <td></td>
+      <td>ENT RIED'HANDBALL U18M</td>
+      <td>COMPLEXE SPORTIF  RUE DE LA FORET NOIRE RIXHEIM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>27/05 AU 28/05/2023</td>
+      <td></td>
+      <td>THIONVILLE U18M</td>
+      <td></td>
+      <td></td>
+      <td>COLMAR HC U18M</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>27/05 AU 28/05/2023</td>
+      <td></td>
+      <td>METZ U18M</td>
+      <td></td>
+      <td></td>
+      <td>HOCHFELDEN&amp;DETTWILLER U18M</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>27/05 AU 28/05/2023</td>
+      <td></td>
+      <td>EPINAL U18M</td>
+      <td></td>
+      <td></td>
+      <td>SELESTAT U18M2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>27/05 AU 28/05/2023</td>
+      <td></td>
+      <td>NANCY U18M2</td>
+      <td></td>
+      <td></td>
+      <td>LINGOLSHEIM</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>10/12 AU 11/12/2022</td>
+      <td>samedi 10 décembre 14H30</td>
+      <td>STRASBOURG&amp;SCHILTIGHEIM U18M2</td>
+      <td>30</td>
+      <td>24</td>
+      <td>COLMAR HC U18M</td>
+      <td>GYMNASE DES MALTERIES 49  RUE DES MALTERIES SCHILTIGHEIM</td>
+      <td>MORLET ESTEBAN BETTINELLI QUENTIN</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>10/12 AU 11/12/2022</td>
+      <td>samedi 10 décembre 16H00</td>
+      <td>ENT MULHOUSE ACADEMIE U18M2</td>
+      <td>42</td>
+      <td>30</td>
+      <td>METZ U18M</td>
+      <td>COMPLEXE SPORTIF  RUE DE LA FORET NOIRE RIXHEIM</td>
+      <td>KUZU METIN —</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>10/12 AU 11/12/2022</td>
+      <td>samedi 10 décembre 16H00</td>
+      <td>SELESTAT U18M2</td>
+      <td>37</td>
+      <td>25</td>
+      <td>BASSIN MUSSIPONTAIN U18M</td>
+      <td>CENTRE SPORTIF INTERCOMMUNAL EUGENE GRIESMAR  QUAI ALBRECHT SELESTAT</td>
+      <td>DREYER AYMERIC BIERMANN LUKAS</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>10/12 AU 11/12/2022</td>
+      <td>dimanche 11 décembre 14H00</td>
+      <td>ENT RIED'HANDBALL U18M</td>
+      <td>31</td>
+      <td>24</td>
+      <td>NANCY U18M2</td>
+      <td>SALLE DU COLLEGE ROMAIN ROLLAND  RUE ERCKMANN CHATRIAN ERSTEIN</td>
+      <td>LIBIC ARIJAN LIBIC DORIJAN</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>10/12 AU 11/12/2022</td>
+      <td>samedi 10 décembre 17H00</td>
+      <td>LINGOLSHEIM</td>
+      <td>34</td>
+      <td>27</td>
+      <td>THIONVILLE U18M</td>
+      <td>GYMNASE COLETTE BESSON 30 MARIA CALAS LINGOLSHEIM</td>
+      <td>JANKOWSKI YOHAN —</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>10/12 AU 11/12/2022</td>
+      <td>samedi 10 décembre 16H30</td>
+      <td>HOCHFELDEN&amp;DETTWILLER U18M</td>
+      <td>29</td>
+      <td>29</td>
+      <td>EPINAL U18M</td>
+      <td>COMPLEXE SPORTIF DE HOCHFELDEN 1  RUE DES 4 VENTS HOCHFELDEN</td>
+      <td>NONONE STEEVEN —</td>
+    </tr>
+  </tbody>
+</table></body>

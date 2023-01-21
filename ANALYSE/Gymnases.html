@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e97e8a211716978efbe5147dba23a151 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    <h3 align="center" style="font-size:16px font-family:Arial"><b>Gymnases du Championnat Handball U18M Saison 2022-23</b></h3>
+    
+            <div class="folium-map" id="map_e97e8a211716978efbe5147dba23a151" ></div>
+        
+</body>
+<script>    
+    
+            var map_e97e8a211716978efbe5147dba23a151 = L.map(
+                "map_e97e8a211716978efbe5147dba23a151",
+                {
+                    center: [48.56134261187937, 6.9014559125840815],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a0d0b01e1bde1f67cedf38e16821f8ef = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e97e8a211716978efbe5147dba23a151);
+        
+    
+            var marker_e66a6a895877685324e1918c3bd59e6f = L.marker(
+                [48.4223835597174, 7.651929290215314],
+                {}
+            ).addTo(map_e97e8a211716978efbe5147dba23a151);
+        
+    
+        var popup_cf0aa33e654cb92e8e271a7db80c5960 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_47e528480904f6877b32729f54d41379 = $(`<div id="html_47e528480904f6877b32729f54d41379" style="width: 100.0%; height: 100.0%;">ENT RIED'HANDBALL U18M</div>`)[0];
+            popup_cf0aa33e654cb92e8e271a7db80c5960.setContent(html_47e528480904f6877b32729f54d41379);
+        
+
+        marker_e66a6a895877685324e1918c3bd59e6f.bindPopup(popup_cf0aa33e654cb92e8e271a7db80c5960)
+        ;
+
+        
+    
+    
+            var marker_47bc0c4f026425f265e67a8b373f73d0 = L.marker(
+                [49.10206046306156, 6.221777042356304],
+                {}
+            ).addTo(map_e97e8a211716978efbe5147dba23a151);
+        
+    
+        var popup_96dc49002bf0e9d91910015d51927e45 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_38d5a199899e76f8ce62ea46f7f9bae8 = $(`<div id="html_38d5a199899e76f8ce62ea46f7f9bae8" style="width: 100.0%; height: 100.0%;">METZ U18M</div>`)[0];
+            popup_96dc49002bf0e9d91910015d51927e45.setContent(html_38d5a199899e76f8ce62ea46f7f9bae8);
+        
+
+        marker_47bc0c4f026425f265e67a8b373f73d0.bindPopup(popup_96dc49002bf0e9d91910015d51927e45)
+        ;
+
+        
+    
+    
+            var marker_64bbe97872711581ab25f11037c24169 = L.marker(
+                [48.676969018079625, 6.193471596314589],
+                {}
+            ).addTo(map_e97e8a211716978efbe5147dba23a151);
+        
+    
+        var popup_f7a7b7073f6858de47d6fc4ca49bb615 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f82a64f35e5fc627114f59c542889497 = $(`<div id="html_f82a64f35e5fc627114f59c542889497" style="width: 100.0%; height: 100.0%;">NANCY U18M2</div>`)[0];
+            popup_f7a7b7073f6858de47d6fc4ca49bb615.setContent(html_f82a64f35e5fc627114f59c542889497);
+        
+
+        marker_64bbe97872711581ab25f11037c24169.bindPopup(popup_f7a7b7073f6858de47d6fc4ca49bb615)
+        ;
+
+        
+    
+    
+            var marker_70d67493877f462196fdd1aefb5ddccc = L.marker(
+                [49.36877802825876, 6.1617871693498225],
+                {}
+            ).addTo(map_e97e8a211716978efbe5147dba23a151);
+        
+    
+        var popup_350ab39b79a5748e4c9bde2a433476f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3efd5e2dd6f03e1f9eb438823a3ace57 = $(`<div id="html_3efd5e2dd6f03e1f9eb438823a3ace57" style="width: 100.0%; height: 100.0%;">THIONVILLE U18M</div>`)[0];
+            popup_350ab39b79a5748e4c9bde2a433476f8.setContent(html_3efd5e2dd6f03e1f9eb438823a3ace57);
+        
+
+        marker_70d67493877f462196fdd1aefb5ddccc.bindPopup(popup_350ab39b79a5748e4c9bde2a433476f8)
+        ;
+
+        
+    
+    
+            var marker_5d60a407a23330a43e19ad56fb7b21aa = L.marker(
+                [47.753907195499984, 7.3282587269733535],
+                {}
+            ).addTo(map_e97e8a211716978efbe5147dba23a151);
+        
+    
+        var popup_125697f8d2dee57b1a2023c3f4fefbee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c22fafceece20ca3bba6c3a0f863b79a = $(`<div id="html_c22fafceece20ca3bba6c3a0f863b79a" style="width: 100.0%; height: 100.0%;">ENT MULHOUSE ACADEMIE U18M2</div>`)[0];
+            popup_125697f8d2dee57b1a2023c3f4fefbee.setContent(html_c22fafceece20ca3bba6c3a0f863b79a);
+        
+
+        marker_5d60a407a23330a43e19ad56fb7b21aa.bindPopup(popup_125697f8d2dee57b1a2023c3f4fefbee)
+        ;
+
+        
+    
+    
+            var marker_ceaee33fe41f97ccbd629aec8e04c3c4 = L.marker(
+                [48.1866131980697, 6.470802440478821],
+                {}
+            ).addTo(map_e97e8a211716978efbe5147dba23a151);
+        
+    
+        var popup_9e79b5d35bc4a9c71c3bb9f0542fbb80 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bcf63afe174face2a871bb8354503574 = $(`<div id="html_bcf63afe174face2a871bb8354503574" style="width: 100.0%; height: 100.0%;">EPINAL U18M</div>`)[0];
+            popup_9e79b5d35bc4a9c71c3bb9f0542fbb80.setContent(html_bcf63afe174face2a871bb8354503574);
+        
+
+        marker_ceaee33fe41f97ccbd629aec8e04c3c4.bindPopup(popup_9e79b5d35bc4a9c71c3bb9f0542fbb80)
+        ;
+
+        
+    
+    
+            var marker_2ffa17fb6a0675798af1a4938963254c = L.marker(
+                [48.60461444093289, 7.743636698162694],
+                {}
+            ).addTo(map_e97e8a211716978efbe5147dba23a151);
+        
+    
+        var popup_8c1f94b1286e53d82948df070d364d0d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe2cd08d37eb8a5c2029b4ffe7cf728c = $(`<div id="html_fe2cd08d37eb8a5c2029b4ffe7cf728c" style="width: 100.0%; height: 100.0%;">STRASBOURG&SCHILTIGHEIM U18M2</div>`)[0];
+            popup_8c1f94b1286e53d82948df070d364d0d.setContent(html_fe2cd08d37eb8a5c2029b4ffe7cf728c);
+        
+
+        marker_2ffa17fb6a0675798af1a4938963254c.bindPopup(popup_8c1f94b1286e53d82948df070d364d0d)
+        ;
+
+        
+    
+    
+            var marker_c8d5a3c38ff526706b7ae25297b478cf = L.marker(
+                [48.761002955531666, 7.564414127393387],
+                {}
+            ).addTo(map_e97e8a211716978efbe5147dba23a151);
+        
+    
+        var popup_f7f2be2aad34c574c88fd0ac25cac821 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3fcb29639a704c52e2edc46736ead33f = $(`<div id="html_3fcb29639a704c52e2edc46736ead33f" style="width: 100.0%; height: 100.0%;">HOCHFELDEN&DETTWILLER U18M</div>`)[0];
+            popup_f7f2be2aad34c574c88fd0ac25cac821.setContent(html_3fcb29639a704c52e2edc46736ead33f);
+        
+
+        marker_c8d5a3c38ff526706b7ae25297b478cf.bindPopup(popup_f7f2be2aad34c574c88fd0ac25cac821)
+        ;
+
+        
+    
+    
+            var marker_839099450d810b7faad8836028d7177b = L.marker(
+                [48.84118446985741, 6.059275127005468],
+                {}
+            ).addTo(map_e97e8a211716978efbe5147dba23a151);
+        
+    
+        var popup_ef092deb47a7982654205708c0a798cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_97c80b0808f7652b2856b85d1172ae8d = $(`<div id="html_97c80b0808f7652b2856b85d1172ae8d" style="width: 100.0%; height: 100.0%;">BASSIN MUSSIPONTAIN U18M</div>`)[0];
+            popup_ef092deb47a7982654205708c0a798cb.setContent(html_97c80b0808f7652b2856b85d1172ae8d);
+        
+
+        marker_839099450d810b7faad8836028d7177b.bindPopup(popup_ef092deb47a7982654205708c0a798cb)
+        ;
+
+        
+    
+    
+            var marker_5030ec197fd51dc56d63ebb1308bb08a = L.marker(
+                [48.075639122459386, 7.360304426982781],
+                {}
+            ).addTo(map_e97e8a211716978efbe5147dba23a151);
+        
+    
+        var popup_343e5abf5523d66bf19cf9b8687f9a6c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1fc74b875d705c2bb837f35d93338709 = $(`<div id="html_1fc74b875d705c2bb837f35d93338709" style="width: 100.0%; height: 100.0%;">COLMAR HC U18M</div>`)[0];
+            popup_343e5abf5523d66bf19cf9b8687f9a6c.setContent(html_1fc74b875d705c2bb837f35d93338709);
+        
+
+        marker_5030ec197fd51dc56d63ebb1308bb08a.bindPopup(popup_343e5abf5523d66bf19cf9b8687f9a6c)
+        ;
+
+        
+    
+    
+            var marker_5e4a1f79e01e23e3f3a6e0c59df4305d = L.marker(
+                [48.25196381266806, 7.4510275133350135],
+                {}
+            ).addTo(map_e97e8a211716978efbe5147dba23a151);
+        
+    
+        var popup_b14d74b1609378c3df79097ac2b22ea4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d8ebe53639970a5afb613e089741b4fd = $(`<div id="html_d8ebe53639970a5afb613e089741b4fd" style="width: 100.0%; height: 100.0%;">SELESTAT U18M2</div>`)[0];
+            popup_b14d74b1609378c3df79097ac2b22ea4.setContent(html_d8ebe53639970a5afb613e089741b4fd);
+        
+
+        marker_5e4a1f79e01e23e3f3a6e0c59df4305d.bindPopup(popup_b14d74b1609378c3df79097ac2b22ea4)
+        ;
+
+        
+    
+    
+            var marker_91fd81a44a562a5227c78a8cdfd791ef = L.marker(
+                [48.5592291985453, 7.700333996311093],
+                {}
+            ).addTo(map_e97e8a211716978efbe5147dba23a151);
+        
+    
+        var popup_e845a1eae3e6f30a2ed44e1cf8bf261b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d69c227bb21b794b0587e076c1f7d54 = $(`<div id="html_0d69c227bb21b794b0587e076c1f7d54" style="width: 100.0%; height: 100.0%;">LINGOLSHEIM</div>`)[0];
+            popup_e845a1eae3e6f30a2ed44e1cf8bf261b.setContent(html_0d69c227bb21b794b0587e076c1f7d54);
+        
+
+        marker_91fd81a44a562a5227c78a8cdfd791ef.bindPopup(popup_e845a1eae3e6f30a2ed44e1cf8bf261b)
+        ;
+
+        
+    
+</script>
