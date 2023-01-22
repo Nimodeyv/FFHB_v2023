@@ -8,7 +8,7 @@ It is an investigation and demo of various Python libraries capabilities. In eve
 _10_FFHB_Match_Crawling.ipynb
 This notebook is scrapping data from the internet website and uses sqlite3, selenium and ipywidgets libraries.
 It scrapp informations on matchs (ie. dates, teams, location, referee and score if matchs already took place ). All informations are stored in a SQL file 'Championnat_U18_GrandEst.sqlite'
-![10](https://github.com/Nimodeyv/FFHB_v2023/tree/master/ANALYSE/10.jpg)
+![10](https://github.com/Nimodeyv/FFHB_v2023/master/ANALYSE/10.jpg)
 #
 _20_FFHB_Calcul_Classement.ipynb
 #
