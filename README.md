@@ -43,7 +43,7 @@ This notebok is extracting from every Match report (in format of pdf) the list o
 
 
 ## _50_Analyse_Championnat.ipynb
-This notebook is making a more analysis of the matchs and plot a summary plot show all the match, ranking and evolution of each match along the time.
+This notebook is making a more detailed analysis of the matchs and plot a summary pictures showing all the match, ranking and evolution of each match along the time.
 It uses Matplotlib library.
 Output is an image plot:
     './ANALYSE/Analyse_Equipes_U18.png'
