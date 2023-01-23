@@ -11,13 +11,13 @@ https://www.ffhandball.fr/fr/competition/20405#poule-109164
 ## _10_FFHB_Match_Crawling.ipynb
 This notebook is scrapping data from the internet website and uses sqlite3, selenium and ipywidgets libraries.
 It scrapp informations on matchs (ie. dates, teams, location, referee and score if matchs already took place ). All informations are stored in a SQL file 'Championnat_U18_GrandEst.sqlite'
-#![10](https://user-images.githubusercontent.com/105541734/213926951-dd906eb2-b742-4a6b-b098-c990ad41cca8.jpg)
+![10](https://user-images.githubusercontent.com/105541734/213926951-dd906eb2-b742-4a6b-b098-c990ad41cca8.jpg)
 
 ## _20_FFHB_Calcul_Classement.ipynb
 #
 This notebook is analysing the different matchs from the sql db and making ranking of the championship. It uses pandas library.
 It stores the ranking in a HTML table file under the path './ANALYSE/Classement_actuel.html'
-#![20](https://user-images.githubusercontent.com/105541734/213931481-1ad57287-cced-4d8f-b21a-646ba488c6e2.jpg)
+![20](https://user-images.githubusercontent.com/105541734/213931481-1ad57287-cced-4d8f-b21a-646ba488c6e2.jpg)
 
 ## _30_Planning_Match_U18.ipynb
 This notebook is building from the selected team a planning the different matchs done and those which are coming. It uses icalendar library.
